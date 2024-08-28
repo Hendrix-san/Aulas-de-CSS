@@ -1,0 +1,87 @@
+"Formas de escrita de cores"
+
+As cores em CSS podem ser escritas de três modos:
+
+Com palavras-chave, nas quais podem ser usados os nomes das cores (seguindo as definidas pela especificação CSS) ou a notação hexadecimal. Por exemplo: blue, red, #FFFFFF etc.
+
+Com um sistema de coordenada cúbica RGB, com as notações rgb() e rgba().
+
+Com um sistema de coordena cilíndrica HSL, com as notações hsl() e hsla().
+
+
+
+"Propriedades de cor"
+
+Essas propriedades se referem a quais elementos podemos definir cores.
+Observe a seguir as quatro principais propriedades relacionadas à cor e aos elementos em que podem ser aplicadas.
+
+color - Serve para definir cor de textos.
+Pode ser utilizada em elementos que contenham texto, como <h1>...<p>, <header>, <section>, etc.
+
+background-color - Serve para definir a cor de fundo de elementos.
+Pode ser utilizada em qualquer elemento HTML.
+
+border-color - Serve para definir a cor da borda.
+Pode ser utilizada em qualquer elemento HTML.
+
+outline-color - Serve para definir a cor da borda externa.
+Pode ser utilizada em qualquer elemento HTML.
+
+
+
+"Recursos de textos"
+
+A estilização de textos com o uso de CSS é dividida em duas partes:
+
+    Layout do texto: Espaçamento entre os caracteres e linhas; alinhamento em relação ao container.
+    Estilos das fontes: Família, tamanho, efeitos como negrito etc.
+
+Em linhas gerais, os navegadores aplicam estilos padrões quando renderizam conteúdos textuais. Observe algumas propriedades CSS que alteram esse comportamento padrão.
+
+
+"Alinhamento de texto"
+
+A propriedade text-align é usada para controlar o alinhamento do texto em razão do container no qual está inserido.
+
+Tal propriedade pode assumir quatro valores: left, right, center e justify. Como os nomes indicam, essas propriedades alinham o texto à esquerda, à direita, ao centro ou de forma justificada.
+
+
+"Espaçamento entre linhas"
+
+A propriedade line-height permite alterar o espaçamento vertical entre as linhas de texto. Seus valores possíveis são:
+
+Normal: Valor padrão do navegador (entre 1 e 1.2 em relação ao font-size, dependendo do navegador.)
+
+Número: Valor inteiro ou decimal que será multiplicado ao tamanho da fonte.
+
+Comrpimento: Valor de unidades, como pixels, pontos, "em" etc.
+
+A maneira mais recomendada para declarar o espaçamento entre linhas é utilizando o valor em número. Desse modo, o espaçamento será o resultado da multiplicação do valor definido pelo tamanho da fonte.
+extension
+
+Exemplo:
+Line-height: 1.5; font-size: 12px. Sendo o valor 1.5 multiplicado pelo valor da propriedade font-size, resultando no valor de 18px de espaçamento.
+
+"Espaçamento entre letras e palavras"
+As propriedades letter-spacing e word-spacing permitem alterar o espaçamento entre letras e/ou palavras. Podem assumir valores de comprimento – “px”, “pt” etc.
+
+
+"Recursos de fontes"
+Em relação às fontes, há propriedades CSS para definir família, tamanho, estilo, entre outras possibilidades. Vamos conhecer as propriedades mais usadas!
+
+Font-family - Essa propriedade é utilizada para definir a família da fonte utilizada em página web ou em partes de seu conteúdo.
+Utilizando essa propriedade, é possível definir, por exemplo, desde uma única fonte a uma lista de fontes, no qual seus valores são declarados em ordem de importância, da esquerda para direita.
+Desse modo, caso determinada fonte não esteja disponível no dispositivo cliente, a próxima fonte definida será usada, e assim sucessivamente.
+Caso nenhuma das fontes definidas esteja disponível no cliente, o navegador fará uso de uma fonte padrão.
+
+
+Font-size - Essa propriedade é responsável por definir o tamanho do texto. Seus valores podem ser definidos com a utilização de diferentes unidades de medida, como pixels, além de porcentagem etc.
+
+
+Font-style - Propriedade usada na estilização de textos aplicando o efeito de itálico.
+Seus valores possíveis são: normal (ou seja, tira o efeito do texto, sendo o estilo padrão de todo elemento), italic e oblique (uma versão mais inclinada em relação ao itálico).
+
+
+Font-weight - O peso de uma fonte é definido com a utilização dessa propriedade.
+Com ela, é possível aplicar o efeito de negrito em uma escala.
+Seus valores possíveis são: normal, bold, lighter e bolder (aumentam ou diminuem o peso da fonte em relação ao peso da fonte de seu elemento pai); e uma escala numérica de 100 a 900.

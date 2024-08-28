@@ -1,0 +1,55 @@
+CSS e HTML
+
+Há três formas usuais de aplicar estilos em um documento HTML usando CSS: Inline, Interna e Externa. Além dessas, a HTML5 permite a aplicação em escopo.
+
+CSS inline
+Essa forma envolve a declaração do estilo CSS diretamente na tag, no código HTML. A declaração inline faz uso do atributo style procedido por declarações separadas por ponto e vírgula “;”. Esse atributo pode ser usado em qualquer tag HTML.
+Ex:
+<p style="background-color: blue;">Texto parágrafo</p>
+
+
+CSS interna
+Também chamada de CSS incorporada, é declarada na seção <head> do documento HTML.
+Ex:
+<html>
+	<head>
+		<style type="text/css">
+			p{
+				background-color: blue
+			}
+	</head>
+</html>
+
+
+CSS externa
+Nesse caso, os estilos são declarados em um arquivo externo, com extensão “.css” e vinculados ao documento HTML por meio da tag <link> ou da diretiva @import dentro da tag <head>.
+Ex:
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+	</head>
+</html>
+
+<html>
+	<head>
+		<style>
+			@import url("estilos.css");
+		</style>
+	</head>
+</html>
+
+
+CSS em escopo
+Criada a partir da HTML5, por meio dessa forma de aplicação de estilo, é possível aplicar estilos no âmbito de escopo, ou seja, específicos para as seções da página em que foram declarados, incluindo os seus elementos filhos. No código a seguir, a tag <p> receberá os estilos definidos, sendo a mesma regra válida para outros estilos e elementos que, porventura, venham a fazer parte da <div>.
+Ex:
+<div>
+
+	<style type="text/css">
+		/* Estes estilos serão aplicados apenas dentro da Div */
+		p{
+			background-color: blue;
+		}
+	</style>
+	<p>Texto do parágrafo</p>
+	
+</div>

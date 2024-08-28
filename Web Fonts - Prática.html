@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prática de Web Fonts</title>
+<style>
+@font-face {
+	font-family: "Nunito";
+	src: url("Nunito.woff2")
+		format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Foldit";
+	src: url("Foldit.woff2")
+		format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+#para1 {
+	font-family: Nunito;
+	color: red;
+	font-size: 20px;
+}
+
+#para2 {
+	font-family: Foldit;
+	font-size: 20px;
+}
+
+#T {
+	text-align: center;
+	font-size: 40px;
+	color: yellow;
+	background-color: black;
+}
+
+</style>
+</head>
+<body>
+
+<h1 id="T">Usando Web Fontes</h1>
+<hr>
+
+<div id="para1">
+	<h3 style="text-align: center; background-color: black">Sobre o jogo</h3>
+	<p>Terraria é um jogo eletrônico RPG de ação-aventura independente produzido pela desenvolvedora de jogos Re-Logic. Possui como características a exploração, artesanato, construção de estruturas e combate a monstros perigosos em um mundo 2D gerado de forma procedural. Lançado no dia 16 de maio de 2011, o jogo vendeu mais de 45 milhões de cópias, recebendo atualizações gratuitas mesmo mais de dez anos depois de seu lançamento.</p>
+</div>
+	<hr>
+	<h3 id="para1" style="background-color: black; color: red; text-align: center; font-size: 20px">Jogabilidade</h3>
+<div id="para2">
+	<p>Terraria é um jogo bidimensional do gênero Sandbox. A jogabilidade de Terraria envolve mineração, exploração, construção e combate, com modos um jogador e multijogador. Terraria é frequentemente comparado com jogos como Minecraft e Metroid devido suas semelhanças de design de jogo.</p>
+</div>
+
+</body>
+</html>
